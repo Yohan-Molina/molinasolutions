@@ -1,9 +1,21 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 function App() {
   return (
-    <div>
-      <h1>Este es el sitio web de molinasolutions.com</h1>
-      <h2>Un salud especial al confundador mamare</h2>
-    </div>
+    < BrowserRouter>
+      <Routes>
+        <Route path='/' element={
+          <h1 className='text-4xl'>Bienvenidos a 
+            <span className='text-blue-600'> MOLINASOLUTIONS</span>
+          </h1>
+        }/>
+        <Route path='/fruppys' element={
+          <h1 className='text-4xl'>Bienvenidos a 
+            <span className='text-orange-400'> Fruppys</span>
+          </h1>
+        } />
+      </Routes>
+    </ BrowserRouter>
   )
 }
 

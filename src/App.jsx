@@ -1,21 +1,34 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
+
 
 function App() {
+  const router = createHashRouter([
+    {
+      path: '/',
+      element: (
+        <h1 className='text-4xl'>Bienvenidos a 
+          <span className='text-blue-600'> MOLINASOLUTIONS</span>
+        </h1>
+      )
+    },
+    {
+      path: '/fruppys',
+      element: (
+        <h1 className='text-4xl'>Bienvenidos a 
+          <span className='text-orange-400'> Fruppys</span>
+        </h1>
+      )
+    }
+  ]);
+
   return (
-    < BrowserRouter>
+    <RouterProvider router={router}>
       <Routes>
-        <Route path='/' element={
-          <h1 className='text-4xl'>Bienvenidos a 
-            <span className='text-blue-600'> MOLINASOLUTIONS</span>
-          </h1>
-        }/>
-        <Route path='/fruppys' element={
-          <h1 className='text-4xl'>Bienvenidos a 
-            <span className='text-orange-400'> Fruppys</span>
-          </h1>
-        } />
+        {router.routes.map(route => (
+          <Route key={route.path} path={route.path} element={route.element} />
+        ))}
       </Routes>
-    </ BrowserRouter>
+    </RouterProvider>
   )
 }
 

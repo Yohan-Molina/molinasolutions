@@ -6,7 +6,7 @@
   "description": "molinasolutions",
   "main": "index.js",
   "scripts": {
-    "predeploy": "echo 'https://molinasolutions.com/' > ./build/CNAME",
+    "predeploy": "echo https://molinasolutions.com > ./build/CNAME",
     "deploy": "gh-apges -d build"
   },
   "keywords": ["molina", "tech", "solutions"],

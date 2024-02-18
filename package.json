@@ -1,0 +1,17 @@
+{
+  "name": "molinasolutions",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://molinasolutions.com/",
+  "description": "molinasolutions",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-apges -d build"
+  },
+  "keywords": ["molina", "tech", "solutions"],
+  "author": "Molinasolutions",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

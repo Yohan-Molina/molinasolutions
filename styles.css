@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container  {
+  background-image: url('./images/brand.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 140rem;
+  position: relative;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  position: absolute;
+  top: 11rem;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 100rem;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+
+.title {
+  color: white;
+  font-size: 180px;
+  font-family: "Anta", sans-serif;
+}
+
+@media (max-width: 2200px) {
+  .title { font-size: 140px; }
+
+  svg {
+    width: 140px;
+  }
+}
+
+@media (max-width: 2200px) {
+  .title { font-size: 140px; }
+
+  svg {
+    width: 140px;
+  }
+}

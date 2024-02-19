@@ -1,61 +1,68 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-}
-
-.container  {
-  background-image: url('./images/brand.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 140rem;
-  position: relative;
-}
-
-.text {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 36px;
-  position: absolute;
-  top: 11rem;
-}
-
-.img-fluid {
-  width: 100%;
-  max-width: 100rem;
-  height: auto;
-  display: block;
-  margin-inline: auto;
-}
-
-.title {
-  color: white;
-  font-size: 180px;
   font-family: "Anta", sans-serif;
 }
 
-@media (max-width: 2200px) {
-  .title { font-size: 140px; }
-
-  svg {
-    width: 140px;
-  }
+.mycontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./images/brand.png');
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 1rem;
 }
 
-@media (max-width: 2200px) {
-  .title { font-size: 140px; }
+.robot-img {
+  background-image: url('./images/cute-bot.png');
+  width: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.robot-img img {
+  width: 100%;
+  height: 100%;
+}
 
-  svg {
-    width: 140px;
+.text {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.icon-hammer {
+  height: 64px;
+}
+.title {
+  margin: 0;
+  color: #fff;
+  font-size: 64px;
+}
+@media (max-width: 900px){
+  .title {
+    font-size: 48px;
+  }
+  .icon-hammer {
+    height: 48px;
+  }
+  .robot-img {
+    width: 100%;
+  }
+}
+@media (max-width: 416px){
+  .text {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .icon-hammer {
+    height: 36px;
   }
 }
